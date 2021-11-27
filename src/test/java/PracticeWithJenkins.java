@@ -11,32 +11,6 @@ import static com.codeborne.selenide.Selenide.*;
 public class PracticeWithJenkins extends BaseTest {
 
     @Test
-    void firstTest() {
-        Assertions.assertTrue(true);
-    }
-
-    @Test
-    void secondTest() {
-        Assertions.assertTrue(true);
-    }
-
-    @Test
-    void thirdTest() {
-        Assertions.assertTrue(true);
-    }
-
-    @Test
-    void fourthTest() {
-        Assertions.assertTrue(true);
-    }
-
-    @Disabled
-    @Test
-    void fifthTest() {
-        Assertions.assertTrue(true);
-    }
-
-    @Test
     void formTest() {
 
         open("https://demoqa.com/automation-practice-form");
