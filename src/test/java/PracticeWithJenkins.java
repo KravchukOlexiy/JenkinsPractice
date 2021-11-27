@@ -1,6 +1,8 @@
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -12,6 +14,7 @@ public class PracticeWithJenkins {
     @Test
     void formTest () {
         Configuration.startMaximized = true;
+        SelenideLogger.addListener("allure", new AllureSelenide());
 
         open ("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("My firtsname");
