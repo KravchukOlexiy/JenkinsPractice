@@ -3,6 +3,8 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -10,6 +12,34 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class PracticeWithJenkins {
+
+
+
+    @Test
+    void firstTest () {
+        Assertions.assertTrue(true);
+    }
+
+    @Test
+    void secondTest () {
+        Assertions.assertTrue(true);
+    }
+
+    @Test
+    void thirdTest () {
+        Assertions.assertTrue(true);
+    }
+
+    @Test
+    void fourthTest () {
+        Assertions.assertTrue(true);
+    }
+
+    @Disabled
+    @Test
+    void fifthTest () {
+        Assertions.assertTrue(true);
+    }
 
     @Test
     void formTest () {
