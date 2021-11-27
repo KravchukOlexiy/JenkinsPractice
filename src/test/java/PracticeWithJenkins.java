@@ -1,8 +1,5 @@
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -14,35 +11,35 @@ import static com.codeborne.selenide.Selenide.*;
 public class PracticeWithJenkins extends BaseTest {
 
     @Test
-    void firstTest () {
+    void firstTest() {
         Assertions.assertTrue(true);
     }
 
     @Test
-    void secondTest () {
+    void secondTest() {
         Assertions.assertTrue(true);
     }
 
     @Test
-    void thirdTest () {
+    void thirdTest() {
         Assertions.assertTrue(true);
     }
 
     @Test
-    void fourthTest () {
+    void fourthTest() {
         Assertions.assertTrue(true);
     }
 
     @Disabled
     @Test
-    void fifthTest () {
+    void fifthTest() {
         Assertions.assertTrue(true);
     }
 
     @Test
-    void formTest () {
+    void formTest() {
 
-        open ("https://demoqa.com/automation-practice-form");
+        open("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("My firtsname");
         $("#lastName").setValue("My lastname");
         $("#userEmail").setValue("someemail@some.net");
