@@ -11,9 +11,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class PracticeWithJenkins {
-
-
+public class PracticeWithJenkins extends BaseTest {
 
     @Test
     void firstTest () {
@@ -43,8 +41,6 @@ public class PracticeWithJenkins {
 
     @Test
     void formTest () {
-        Configuration.startMaximized = true;
-        SelenideLogger.addListener("allure", new AllureSelenide());
 
         open ("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("My firtsname");
