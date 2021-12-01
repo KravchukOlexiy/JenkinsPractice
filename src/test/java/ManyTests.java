@@ -29,4 +29,11 @@ public class ManyTests {
     void fifthTest() {
         Assertions.assertTrue(true);
     }
+
+    @Disabled
+    @Test
+    void sixthTest() {
+        Assertions.assertTrue(true);
+    }
+
 }
