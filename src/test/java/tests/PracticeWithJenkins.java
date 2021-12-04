@@ -2,8 +2,7 @@ package tests;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -12,6 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeWithJenkins extends BaseTest {
 
+    @Tag("form")
     @Test
     void formTest() {
 
@@ -54,7 +54,6 @@ public class PracticeWithJenkins extends BaseTest {
                 "Hobbies", "Sports",
                 "Picture", "1.png",
                 "Address", "My text",
-                "State and City", "NCR Delhi -"));
-
+                "State and City", "NCR Delhi"));
     }
 }
