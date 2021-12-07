@@ -18,7 +18,8 @@ public class BaseTest {
     @BeforeAll
     static void setup() {
 
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        SelenideLogger.addListener("allure", new AllureSelenide());
+        //SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
 
         //selenoid setup
