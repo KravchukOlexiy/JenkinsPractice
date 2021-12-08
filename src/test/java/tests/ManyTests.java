@@ -2,8 +2,10 @@ package tests;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("form")
 public class ManyTests {
 
     @Test
@@ -26,7 +28,6 @@ public class ManyTests {
         Assertions.assertTrue(true);
     }
 
-    @Disabled
     @Test
     void fifthTest() {
         Assertions.assertTrue(true);
@@ -37,9 +38,5 @@ public class ManyTests {
     void sixthTest() {
         Assertions.assertTrue(true);
     }
-
-    //change 1
-    //change 2
-    //change 3
 
 }
