@@ -39,4 +39,9 @@ public class ManyTests {
         Assertions.assertTrue(true);
     }
 
+    @Test
+    void sevenTest() {
+        Assertions.assertTrue(false);
+    }
+
 }
